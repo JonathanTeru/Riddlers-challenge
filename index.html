@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-3.webp" type="image/x-icon">
+    <title>Rataalada</title>
+    <script src="https://unpkg.com/typeit@latest"></script>
+</head>
+
+<body>
+  
+  <audio id="myAudio">
+    <source src="img/Ave Maria - Reprise (Film Version) _ The Batman (2022)(MP3_160K).mp3" type="audio/mpeg">
+  </audio>
+  
+  <div id="botones"> <button onclick="playAudio()" type="button" id="play">Play Audio</button>
+    <button onclick="pauseAudio()" type="button" id="pause">Pause Audio</button>
+         </div>
+ 
+    <div id="loading" class="blink">
+        <img src="img/attachment-the-batman.jpg" alt="Mi imagen">
+    </div>
+    
+    <div id="traceroute"></div>
+    
+    <h1 class="title">Prueba de la verdad</h1>
+    
+    <div id="acertijo0">
+      <p id="texto-acertijo0"></p>
+      <input type="text" id="respuesta0" name="respuesta0">
+      <button onclick="verificarRespuesta0()">Verificar</button>
+      <p id="resultado0"></p>
+    </div>
+
+    <div id="acertijo1"  style="display: none;">
+      <p id="texto-acertijo1"></p>
+      <input type="text" id="respuesta1" name="respuesta1">
+      <button onclick="verificarRespuesta1()">Verificar</button>
+      <p id="resultado1"></p>
+    </div>
+  
+    <div id="acertijo2" style="display: none;">
+      <p id="texto-acertijo2"></p>
+      <input type="text" id="respuesta2" name="respuesta2">
+      <button onclick="verificarRespuesta2()">Verificar</button>
+      <p id="resultado2"></p>
+    </div>
+  
+    <div id="acertijo3" style="display: none;">
+      <p id="texto-acertijo3"></p>
+      <input type="text" id="respuesta3" name="respuesta3">
+      <button onclick="verificarRespuesta3()">Verificar</button>
+      <p id="resultado3"></p>
+    </div>
+    
+    <div id="recompensa">
+      <a href="https://drive.google.com/drive/folders/1wO6AAZYqTxnMOhenlRoN_0TFIyr5s4Ew?usp=sharing">
+          <img class="carpeta2" src="img/carpeta.jpeg">
+      </a>
+  </div>
+    
+        <!-- Enlazar el archivo JavaScript -->
+        <script src="riddler.js"></script>
+</body>
+
+</html>
